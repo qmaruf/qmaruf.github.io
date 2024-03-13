@@ -2,8 +2,7 @@
 layout: post
 title:  "LLM Demo"
 date:   2024-03-13
-description: Welcome to the "LLM Demo" page! Here, you'll discover two intriguing projects: Brissy and TabgpT. Brissy allows you to engage in friendly conversations with an Aussie, exploring Australian culture and slang, while TabgpT enables you to interact with any tab in Google Chrome. Enjoy exploring the demos!
-
+description: Welcome to the demo page! Here, you'll discover two intriguing projects  Brissy and TabgpT. Brissy allows you to engage in friendly conversations using Australian slang, while TabgpT enables you to interact with any tab in Google Chrome. Enjoy exploring the demos!
 ---
 <!-- <br/> -->
 
