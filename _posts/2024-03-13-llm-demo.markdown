@@ -17,4 +17,4 @@ Have you ever wanted to chat with a genuine Aussie? Now you can with Brissy, the
 
 TabgpT is a Chrome extension that allows you to interact with your browser tabs using natural language. It's powered by `ChatGPT` and can answer any question related to the content of your tabs. Simply ask a question and TabgpT will provide you with the information you need from that tab.
 
-> Try it here [https://tabgpt.carrd.co](tabgpt.carrd.co)
+> Try it here [https://tabgpt.carrd.co](https://tabgpt.carrd.co)
