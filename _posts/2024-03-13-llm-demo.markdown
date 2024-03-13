@@ -2,6 +2,7 @@
 layout: post
 title:  "LLM Demo"
 date:   2024-03-13
+description: Welcome to the "LLM Demo" page! Here, you'll discover two intriguing projects: Brissy and TabgpT. Brissy allows you to engage in friendly conversations with an Aussie, exploring Australian culture and slang, while TabgpT enables you to interact with any tab in Google Chrome. Enjoy exploring the demos!
 
 ---
 <!-- <br/> -->
@@ -10,13 +11,11 @@ date:   2024-03-13
 
 Have you ever wanted to chat with a genuine Aussie? Now you can with Brissy, the Australian slang chatbot. Brissy is powered by `ChatGPT` and can answer questions about Australia, Aussie culture, and a variety of other topics, all in friendly slang.
 
-Try it here 
- https://qmaruf-australianslangchatbot.hf.space
+> Try it here [https://brissy-australianslangchatbot.hf.space](https://qmaruf-australianslangchatbot.hf.space)
 
 
 ### TabgpT: A Chrome Extension to Bring your Tabs to Life
 
 TabgpT is a Chrome extension that allows you to interact with your browser tabs using natural language. It's powered by `ChatGPT` and can answer any question related to the content of your tabs. Simply ask a question and TabgpT will provide you with the information you need from that tab.
 
-Try it here 
- https://tabgpt.carrd.co
+> Try it here [https://tabgpt.carrd.co](tabgpt.carrd.co)
