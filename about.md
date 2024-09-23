@@ -1,29 +1,21 @@
 ---
 layout: page
-title: About
+title: Quazi Marufur Rahman
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<br>
+I'm Quazi Marufur Rahman, a PhD in Robotic Vision with over 8 years of experience in AI and computer vision. 
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I currently lead the Computer Vision and AI team at Advanced Mobility Analytics Group, where I develop AI-driven solutions to improve road safety. 
 
-There are currently two themes built on Poole:
+My work has helped reduce traffic accidents and streamline traffic monitoring operations. 
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I’ve built scalable AI models, deployed real-time object detection systems, and collaborated across teams to deliver high-performance solutions. 
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+With expertise in machine learning, deep learning, and cloud deployment, I’m passionate about solving real-world problems through AI innovation.
 
-## Setup
+In addition to my experience in AI and computer vision, I have a strong foundation in machine learning and natural language processing (NLP).
 
-Some fun facts about the setup of this project include:
+I am proficient in building and fine-tuning deep learning models using Python and PyTorch, and have practical experience deploying these models on cloud platforms such as AWS. 
 
-* Built for [Jekyll](https://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Atom](https://atom.io)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+I am also familiar with large language models like GPT-3 and BERT, and have utilized them in various projects.
