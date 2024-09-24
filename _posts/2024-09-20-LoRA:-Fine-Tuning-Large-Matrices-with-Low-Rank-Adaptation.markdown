@@ -8,7 +8,7 @@ In this blog post, we'll break down the LoRA technique step by step, using a sim
 
 ### The Problem with Fine-Tuning Large Models
 
-When you fine-tune a large model, you typically adjust its weight matrices based on new training data. In modern neural networks, these weight matrices can be massive. For example, a simple layer in a model may have a weight matrix of size \( W \), where \( W \) can be hundreds or even thousands of dimensions large. 
+When you fine-tune a large model, you typically adjust its weight matrices based on new training data. In modern neural networks, these weight matrices can be massive. For example, a simple layer in a model may have a weight matrix of size $$ W $$, where $$ W $$ can be hundreds or even thousands of dimensions large. 
 
 Fine-tuning this large matrix directly has two major challenges:
 
@@ -18,27 +18,27 @@ Fine-tuning this large matrix directly has two major challenges:
 
 ### Enter LoRA: Fine-Tuning with Low-Rank Matrices
 
-LoRA provides an elegant solution to these challenges by **freezing the original weight matrix \( W \)** and introducing two smaller matrices, \( A \) and \( B \), which have a much lower rank. The idea is that instead of updating \( W \) directly, you approximate its updates using the product of two smaller matrices.
+LoRA provides an elegant solution to these challenges by **freezing the original weight matrix $$W$$** and introducing two smaller matrices, $$ A $$ and $$ B $$, which have a much lower rank. The idea is that instead of updating $$ W $$ directly, you approximate its updates using the product of two smaller matrices.
 
 Here’s how LoRA works:
 
-1. **Keep the original weight matrix \( W \) fixed**. This ensures that the model retains the general knowledge from pretraining.
+1. **Keep the original weight matrix $$ W $$ fixed**. This ensures that the model retains the general knowledge from pretraining.
 
 2. **Introduce two low-rank matrices**:
-   - \( A \) with dimensions \( (d_{\text{out}}, r) \)
-   - \( B \) with dimensions \( (r, d_{\text{in}}) \)
+   - $$ A $$ with dimensions $$ (d_{\text{out}}, r) $$
+   - $$ B $$ with dimensions $$ (r, d_{\text{in}}) $$
    
-   Where \( r \) is a small integer that represents the rank. \( r \) is much smaller than either \( d_{\text{out}} \) or \( d_{\text{in}} \), the dimensions of the original weight matrix \( W \).
+   Where $$ r $$ is a small integer that represents the rank. $$ r $$ is much smaller than either $$ d_{\text{out}} $$ or $$ d_{\text{in}} $$, the dimensions of the original weight matrix $$ W $$.
 
-3. **Compute the low-rank update**: The update to \( W \) is given by the product of these two matrices:
-   \[
+3. **Compute the low-rank update**: The update to $$ W $$ is given by the product of these two matrices:
+   $$
    \Delta W = A \times B
-   \]
+   $$
 
 4. **Add the update to the original matrix**: The final weight matrix used during training becomes:
-   \[
+   $$
    W_{\text{new}} = W + A \times B
-   \]
+   $$
 
    This allows the model to adjust its weights for the new task without needing to update all parameters in the original weight matrix.
 
@@ -50,35 +50,35 @@ Let’s break down the LoRA algorithm step by step:
 
 #### Step 1: Initialization
 
-- **Start with a pretrained model**: We begin with a model that has already been trained on a large dataset. The weight matrices in this model, like \( W \), are already optimized for general tasks.
+- **Start with a pretrained model**: We begin with a model that has already been trained on a large dataset. The weight matrices in this model, like $$ W $$, are already optimized for general tasks.
   
-- **Choose a low-rank \( r \)**: The rank \( r \) is a small number that dictates the size of the low-rank matrices \( A \) and \( B \). For example, if \( W \) is a \( 6 \times 6 \) matrix, we might choose \( r = 2 \).
+- **Choose a low-rank $$ r $$**: The rank $$ r $$ is a small number that dictates the size of the low-rank matrices $$ A $$ and $$ B $$. For example, if $$ W $$ is a $$ 6 \times 6 $$ matrix, we might choose $$ r = 2 $$.
 
 #### Step 2: LoRA Decomposition
 
-- **Decompose the update**: Instead of updating \( W \) directly, we introduce two smaller matrices, \( A \) and \( B \). These matrices are of much lower rank than \( W \), making them much smaller and easier to train.
+- **Decompose the update**: Instead of updating $$ W $$ directly, we introduce two smaller matrices, $$ A $$ and $$ B $$. These matrices are of much lower rank than $$ W $$, making them much smaller and easier to train.
 
-- **Freeze the original weights**: The original matrix \( W \) is frozen during fine-tuning. This means its values are not changed, ensuring that the general knowledge captured during pretraining is preserved.
+- **Freeze the original weights**: The original matrix $$ W $$ is frozen during fine-tuning. This means its values are not changed, ensuring that the general knowledge captured during pretraining is preserved.
 
 #### Step 3: Training
 
-- **Train \( A \) and \( B \)**: During the fine-tuning process, only the two small matrices, \( A \) and \( B \), are trained. This allows the model to adapt to new data without requiring updates to the entire weight matrix.
+- **Train $$ A $$ and $$ B $$**: During the fine-tuning process, only the two small matrices, $$ A $$ and $$ B $$, are trained. This allows the model to adapt to new data without requiring updates to the entire weight matrix.
 
-- **Apply the low-rank update**: The update matrix \( \Delta W = A \times B \) is added to the original matrix \( W \). This small update allows the model to fine-tune itself for the new task.
+- **Apply the low-rank update**: The update matrix $$ \Delta W = A \times B $$ is added to the original matrix $$ W $$. This small update allows the model to fine-tune itself for the new task.
 
 #### Step 4: Inference
 
-- **Inference with LoRA**: At inference time, you can either compute the update \( A \times B \) on the fly or precompute the new matrix \( W_{\text{new}} = W + A \times B \). The latter option is often more efficient, as it allows you to use the updated weight matrix just like a normal layer in the model.
+- **Inference with LoRA**: At inference time, you can either compute the update $$ A \times B $$ on the fly or precompute the new matrix $$ W_{\text{new}} = W + A \times B $$. The latter option is often more efficient, as it allows you to use the updated weight matrix just like a normal layer in the model.
 
-### Do We Need \( A \) and \( B \) During Inference?
+### Do We Need $$ A $$ and $$ B $$ During Inference?
 
-This brings up an important question: **Do we need \( A \) and \( B \) during inference?**
+This brings up an important question: **Do we need $$ A $$ and $$ B $$ during inference?**
 
-The answer depends on whether you want to compute the update matrix \( A \times B \) during inference or precompute it after training.
+The answer depends on whether you want to compute the update matrix $$ A \times B $$ during inference or precompute it after training.
 
-1. **Compute on the fly**: If you compute \( A \times B \) during inference, you will need both \( A \) and \( B \) at inference time. This allows you to dynamically adjust the weights as needed.
+1. **Compute on the fly**: If you compute $$ A \times B $$ during inference, you will need both $$ A $$ and $$ B $$ at inference time. This allows you to dynamically adjust the weights as needed.
 
-2. **Precompute \( W_{\text{new}} \)**: Alternatively, you can precompute \( W_{\text{new}} = W + A \times B \) after training is complete. In this case, you no longer need \( A \) and \( B \) during inference, as you’re using the updated weight matrix directly. This method is computationally more efficient during inference.
+2. **Precompute $$ W_{\text{new}} $$**: Alternatively, you can precompute $$ W_{\text{new}} = W + A \times B $$ after training is complete. In this case, you no longer need $$ A $$ and $$ B $$ during inference, as you’re using the updated weight matrix directly. This method is computationally more efficient during inference.
 
 ### Python Example: Applying LoRA to a Simple Matrix
 
@@ -138,6 +138,4 @@ Updated W matrix:
 
 ### Conclusion
 
-The LoRA technique is a powerful and efficient way to fine-tune large models without needing to update all their parameters. By learning low-rank matrices \( A \) and \( B \), we can significantly reduce the computational and memory costs of fine-tuning while still allowing the model to adapt to new tasks.
-
-LoRA ensures that the pretrained knowledge remains intact by freezing the original weight matrices and applying small updates through \(
+The LoRA technique is a powerful and efficient way to fine-tune large models without needing to update all their parameters. By learning low-rank matrices $$ A $$ and $$ B $$, we can significantly reduce the computational and memory costs of fine-tuning while still allowing the model to adapt to new tasks.
