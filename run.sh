@@ -1,1 +1,1 @@
-jekyll serve --incremental --trace --force_polling --livereload
+jekyll serve
