@@ -6,15 +6,24 @@ description: Welcome to the demo page! Here, you'll discover two intriguing proj
 ---
 <!-- <br/> -->
 
-## Brissy: The Aussie Slang Chatbot 
+Brissy: The Australian Slang Chatbot
+========
 
-Have you ever wanted to chat with a genuine Aussie? Now you can with Brissy, the Australian slang chatbot. Brissy is powered by `ChatGPT` and can answer questions about Australia, Aussie culture, and a variety of other topics, all in friendly slang.
+Ever wanted to chat like a true Aussie? Now you can with **Brissy**, the Australian slang chatbot. Powered by `ChatGPT`, Brissy provides answers on everything from Australian culture to general queries—all in authentic Aussie slang. Whether you're curious about Aussie traditions or simply want to experience a casual, fun conversation in local lingo, Brissy has you covered.
 
-> Try it here [https://brissy-australianslangchatbot.hf.space](https://qmaruf-australianslangchatbot.hf.space)
+This project demonstrates the versatility of `ChatGPT` in creating engaging, user-friendly chatbots. Developed with `LangChain`, Brissy uses the ChatGPT API to deliver responses in Australian slang. It's an open-source project, and the code is available on [GitHub](https://github.com/qmaruf/Australian-Slang-Chatbot). The chatbot is hosted on **Hugging Face Spaces**, making it accessible to anyone interested in Australian slang.
 
+> Give it a try [Brissy](https://qmaruf-australianslangchatbot.hf.space/).
 
-## TabgpT: A Chrome Extension to Bring your Tabs to Life
+<br><br><br>
 
-TabgpT is a Chrome extension that allows you to interact with your browser tabs using natural language. It's powered by `ChatGPT` and can answer any question related to the content of your tabs. Simply ask a question and TabgpT will provide you with the information you need from that tab.
+TabgpT: A Chrome Extension to Interact with Your Tabs
+========
 
-> Try it here [https://tabgpt.carrd.co](https://tabgpt.carrd.co)
+**TabgpT** is a Chrome extension that lets you interact with your open browser tabs through natural language queries. Powered by `ChatGPT`, TabgpT can answer questions based on the content of your tabs, making it easier than ever to find the information you need without navigating between pages.
+
+Built using `LangChain`, TabgpT uses the ChatGPT API to extract information from open tabs. The extension leverages AWS Lambda and ECR in the backend, along with the **Retrieval Augmented Generation (RAG)** model to answer questions. TabgpT stores data in a **Chrome vectorstore database** using OpenAI embeddings. When you ask a question, relevant content chunks are retrieved with **Maximum Marginal Relevance (MMR)** search and passed to OpenAI’s API to generate an accurate response.
+
+The user interface is designed with **Twitter Bootstrap** and **jQuery** for a seamless experience. Available on the Chrome Web Store, TabgpT is your go-to tool for browsing more efficiently.
+
+> Give it a try [TabgpT](https://chromewebstore.google.com/detail/tabgpt/meccgaejdpffgldieiacfnbjikenjcfj?authuser=0&hl=en).
