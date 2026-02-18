@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PyTorch Stopped Working After a Kernel Upgrade? Here's the Fix
+title: "PyTorch Stopped Working After a Kernel Upgrade? Here's the Fix"
 date: 2026-02-18
 ---
 
