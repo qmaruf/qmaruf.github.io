@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "PyTorch Stopped Working After a Kernel Upgrade? Here's the Fix"
+title: PyTorch Stopped Working After a Kernel Upgrade? Here's the Fix
 date: 2026-02-18
 description: If you updated your Linux system recently and suddenly PyTorch refuses to import with this error: `ImportError: libtorch_cpu.so: cannot enable executable stack as shared object requires: Invalid argument`
 ---
-
-# 
 
 If you updated your Linux system recently and suddenly PyTorch refuses to import with this error:
 
