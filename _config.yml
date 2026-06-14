@@ -1,23 +1,43 @@
 # Setup
-title:               Quazi
-tagline:             'Computer Vision | AI | Machine Learning | LLM | AWS'
-description:         ''
-url:                 https://qmaruf.github.io
+title:               Quazi Marufur Rahman
+tagline:             'LLMs · AI Agents · Agentic AI · LLM Fine-Tuning · Computer Vision · AWS'
+description:         'Quazi Marufur Rahman — PhD AI engineer and consultant specializing in large language models (LLMs), AI agents, agentic AI, LLM fine-tuning and model training, RAG pipelines, and production computer vision. 10+ years shipping production-grade machine learning systems.'
+keywords:            'LLM, large language models, AI agents, agentic AI, LLM fine-tuning, LLM model training, RAG, retrieval augmented generation, computer vision, machine learning, deep learning, MLOps, AI consultant, vector database, model deployment, AWS SageMaker, PyTorch, Quazi Marufur Rahman'
+lang:                en
+url:                 https://qmaruf.me
 baseurl:             ''
 paginate:            5
+paginate_path:      /notepad/page:num
 permalink:           pretty
+
+# SEO / jekyll-seo-tag
+logo:                /public/Q.png
+twitter:
+  username:          qmaruf
+  card:              summary
+social:
+  name:              Quazi Marufur Rahman
+  links:
+    - https://www.linkedin.com/in/qmaruf/
+    - https://github.com/qmaruf
+    - https://scholar.google.com/citations?user=72Xa_jgAAAAJ
+    - https://orcid.org/0000-0001-6538-0225
+    - https://neuralwork.net/
 
 # About/contact
 author:
   name:              Quazi Marufur Rahman
-  url:               https://twitter.com/qmaruf
+  url:               https://www.linkedin.com/in/qmaruf/
   email:             maruf.csdu@gmail.com
   github:            qmaruf
   linkedin:          https://linkedin.com/in/qmaruf/
+  twitter:           qmaruf
 
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Custom vars
 version:             1.1.0

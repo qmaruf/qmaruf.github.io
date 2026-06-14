@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Home
+title: Notepad
+description: "Notes and articles by Quazi Marufur Rahman on LLMs, AI agents, agentic AI, LLM fine-tuning, RAG, computer vision, PyTorch, and building production machine learning systems."
+keywords: "LLM, AI agents, agentic AI, LLM fine-tuning, RAG, computer vision, PyTorch, machine learning blog, deep learning notes"
 ---
 
 <div class="posts">
@@ -27,7 +29,7 @@ title: Home
   {% endif %}
   {% if paginator.previous_page %}
   {% if paginator.page == 2 %}
-  <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+  <a class="pagination-item newer" href="{{ '/notepad/' | absolute_url }}">Newer</a>
   {% else %}
   <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
   {% endif %}

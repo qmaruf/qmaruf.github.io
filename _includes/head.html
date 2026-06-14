@@ -3,18 +3,53 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="theme-color" content="#ac4142">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 
-  <title>
-    {% if page.title == "Home" %}
-    {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-    {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
-  </title>
+  <!-- SEO: title, description, canonical, Open Graph, Twitter, JSON-LD (jekyll-seo-tag) -->
+  {% seo %}
 
-  {% if page.url and site.baseurl %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
+  <!-- Rich Person schema reinforcing topical AI expertise -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Quazi Marufur Rahman",
+    "url": "{{ site.url }}",
+    "image": "{{ '/public/Q.png' | absolute_url }}",
+    "jobTitle": "AI Engineer & Consultant — LLMs, AI Agents, Agentic AI, Computer Vision",
+    "email": "mailto:{{ site.author.email }}",
+    "description": "PhD AI engineer specializing in large language models (LLMs), AI agents, agentic AI, LLM fine-tuning and model training, RAG pipelines, and production computer vision.",
+    "knowsAbout": [
+      "Large Language Models (LLMs)",
+      "AI Agents",
+      "Agentic AI",
+      "LLM Fine-Tuning",
+      "LLM Model Training",
+      "Retrieval-Augmented Generation (RAG)",
+      "Computer Vision",
+      "Machine Learning",
+      "Deep Learning",
+      "MLOps",
+      "Vector Databases",
+      "AWS SageMaker",
+      "PyTorch"
+    ],
+    "worksFor": { "@type": "Organization", "name": "Transoft Solutions Inc" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Queensland University of Technology" },
+      { "@type": "CollegeOrUniversity", "name": "University of Dhaka" }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/qmaruf/",
+      "https://github.com/qmaruf",
+      "https://scholar.google.com/citations?user=72Xa_jgAAAAJ",
+      "https://orcid.org/0000-0001-6538-0225",
+      "https://neuralwork.net/"
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">

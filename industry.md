@@ -1,33 +1,65 @@
 ---
 layout: page
 title: Industry
+description: "Industry experience of Quazi Marufur Rahman — building LLMs, AI agents, agentic AI, RAG pipelines, LLM fine-tuning, and production computer vision systems across 10+ years at Transoft Solutions, AMAG, Toptal and more."
+keywords: "LLM engineer, AI agent developer, agentic AI, RAG, LLM fine-tuning, computer vision engineer, MLOps, AWS SageMaker, machine learning experience, Quazi Marufur Rahman"
 ---
-## AI Team Lead
-**Advanced Mobility Analytics Group | Brisbane, Queensland, Australia**  
-*Feb 2021 - Present*
 
-As the Team Lead of the Computer Vision and Artificial Intelligence team at Advanced Mobility Analytics Group, I am responsible for managing a highly skilled team and overseeing a wide range of day-to-day tasks. My focus lies in driving innovation and advancing the application of computer vision and AI technologies.
+## Technical Specialist — Computer Vision & AI
+**Transoft Solutions Inc | Canada (Remote)**  
+*Jan 2025 - Present*
+
+I lead applied **R&D at the intersection of computer vision and agentic AI**, defining system architecture, model strategy, and the long-term AI roadmap for enterprise transportation-safety products. My current work spans **multi-agent LLM systems**, retrieval-augmented generation, and large-scale perception pipelines built for production reliability.
 
 **Key Responsibilities:**
-- Lead and manage a talented team of professionals, fostering a collaborative and innovative work environment.
-- Implement and optimize state-of-the-art computer vision algorithms for tasks such as object detection, segmentation, pose estimation, and tracking.
-- Leverage the power of PyTorch and utilize AWS technologies, including Amazon SageMaker, AWS Step Functions, AWS Lambda, Amazon S3, and Amazon EC2, to develop scalable and efficient AI solutions.
-- Utilize intelligent transport analysis techniques to predict and prevent vehicle conflicts, leveraging real-time and historical data to enhance safety and efficiency on the road.
-- Stay up-to-date with the latest advancements in the field of machine learning, computer vision, and artificial intelligence, and explore new approaches and techniques to drive innovation within the team.
+- Architect and ship **agentic AI** systems — multi-agent orchestration, tool-using LLM workflows, and autonomous pipelines for automated engineering-data analysis, technical-document synthesis, and report generation, reducing manual reporting effort by **70%**.
+- Design production-grade **RAG (Retrieval-Augmented Generation)** pipelines with embedding optimization, vector databases, hybrid retrieval, re-ranking, and evaluation harnesses for high-accuracy, context-aware, low-hallucination responses.
+- Drive **LLM fine-tuning and model training** workflows — domain adaptation, instruction tuning, prompt and context engineering, and rigorous offline/online evaluation before deployment.
+- Build transportation-focused **computer vision** systems — object detection, semantic segmentation, classification, and multi-object tracking — achieving **90%+ mAP** in production under real-world constraints.
+- Own the full **MLOps** lifecycle across multiple AI products: problem framing, data strategy, labeling standards, experimentation, benchmarking, deployment automation, observability, and post-deployment monitoring.
 
 ---
 
-## Software Engineer
+## Senior Backend / AI Engineer
+**Deal Analysis Software Intelligence (DASI) — via Toptal | Remote**  
+*Jun 2025 - Nov 2025*
+
+Led the architecture and deployment of a **serverless AI commerce platform** that transforms user room images into structured furniture intelligence and delivers real-time product recommendations across Amazon, eBay, Walmart, and Google Shopping.
+
+**Key Responsibilities:**
+- Directed integration of **LLMs and multimodal models** (ChatGPT, Hugging Face) for furniture description generation, combined with marketplace scraping APIs optimized for reliability, latency, and cost.
+- Designed and shipped an advanced **image inpainting** feature for interactive furniture selection and replacement, leveraging computer vision and cloud-based generative AI.
+- Built secure, subscription-ready payment infrastructure with Stripe, including checkout flows and backend monetization logic.
+- Refactored monolithic scraping services into modular, scalable microservices, improving maintainability and cross-marketplace support.
+
+---
+
+## Computer Vision & AI Team Lead
+**Advanced Mobility Analytics Group | Brisbane, Australia**  
+*Feb 2021 - Dec 2024*
+
+As Team Lead of the Computer Vision and AI team, I managed a high-performing team and drove innovation in applied **deep learning** and computer vision for proactive road safety.
+
+**Key Responsibilities:**
+- Led architecture and delivery of **three production AI video-analytics platforms**, contributing to the prevention of **692+ crashes and 113+ injuries** across deployed regions.
+- Architected scalable **AWS** video-processing infrastructure (Batch, SageMaker, Lambda, Step Functions, S3, EC2) capable of analyzing **1,000+ hours of video per day**, reducing turnaround time by 40%.
+- Designed and deployed real-time **multi-object detection and tracking** systems on edge devices supporting 20+ road-user classes, improving violation and conflict detection accuracy by 15%.
+- Owned the full **ML lifecycle** — data strategy, experimentation, deployment, and monitoring — across detection, segmentation, pose estimation, and tracking systems in production.
+- Led cross-functional teams across CV, engineering, QA, and delivery, driving platform-level performance improvements of 20%.
+
+---
+
+## Senior Machine Learning Engineer
 **TigerIT Bangladesh Ltd | Dhaka, Bangladesh**  
 *Apr 2014 - Feb 2018*
 
-As a Computer Vision and Deep Learning Engineer at Tiger IT BD Ltd., I played a pivotal role in developing cutting-edge solutions that harness the power of computer vision and deep learning algorithms. My work centered around designing and implementing advanced systems for various applications, pushing the boundaries of what is possible in the field.
+As a Computer Vision and Deep Learning Engineer, I designed and shipped advanced perception systems, pushing the boundaries of real-time recognition.
 
 **Key Responsibilities:**
-- Designed an end-to-end Bengali license plate detection system utilizing computer vision and deep learning techniques. This system enabled real-time speed estimation and monitoring, contributing to enhanced road safety and traffic management.
-- Developed an efficient face verification system that adhered to ICAO standards. By leveraging machine learning algorithms in Scikit-Learn and Python, I measured face image sharpness and eyeglass presence, ensuring accurate and reliable results. Additionally, I designed a faster facial recognition algorithm that optimized memory usage by 10% compared to state-of-the-art approaches.
-- Led the research and development of a palm print detection algorithm aimed at facilitating efficient search queries in large databases. By utilizing a deep neural network architecture with autoencoder techniques, I achieved a faster and more accurate speaker recognition system. The proposed algorithm outperformed the previously deployed system by 10% in terms of performance while providing a 5% speed improvement.
-- Collaborated closely with cross-functional teams, including researchers and software engineers, to exchange ideas, validate approaches, and ensure the successful implementation of projects.
+- Designed an end-to-end **Bengali license-plate detection** system using computer vision and deep learning, enabling real-time speed estimation and traffic monitoring.
+- Developed an ICAO-compliant **face verification** system with Scikit-Learn and Python, and designed a faster facial-recognition algorithm using **10% less memory** than state-of-the-art approaches.
+- Led R&D of a **palm-print detection** algorithm using deep neural networks with autoencoders, outperforming the previously deployed system by 10% while running 5% faster.
+- Collaborated with cross-functional research and engineering teams to validate approaches and deliver production systems.
 
 ---
 
@@ -35,15 +67,12 @@ As a Computer Vision and Deep Learning Engineer at Tiger IT BD Ltd., I played a 
 **KAZ Software Limited | Dhaka, Bangladesh**  
 *Oct 2013 - Apr 2014*
 
-As a Full Stack Developer at Kaz Software, I contributed to the development of a web-based knowledge aggregation platform, showcasing my expertise in both front-end and backend development. This platform aimed to collect and organize relevant information from the internet based on users' queries, providing a comprehensive and user-friendly experience.
+Full-stack engineer on a web-based **knowledge-graph aggregation platform** that collected and organized information from the web based on user queries.
 
 **Key Responsibilities:**
-- Played a key role in the end-to-end development of a web-based knowledge aggregation platform, encompassing both front-end and backend components. This involved designing and implementing intuitive user interfaces, optimizing performance, and ensuring seamless integration of various functionalities.
-- Collaborated closely with cross-functional teams, including designers and project managers, to translate requirements into technical specifications and deliver high-quality solutions that met user needs and business objectives.
-- Managed the software life cycle, from planning and development to testing and maintenance, ensuring smooth operation and timely updates to address any issues or enhancements.
-- Developed a Javascript-based browser extension to enhance the user experience, enabling additional features and functionalities that integrated seamlessly with the knowledge aggregation platform.
-- Participated in code reviews, ensuring code quality, adherence to best practices, and continuous improvement of development processes.
-- Stayed up-to-date with the latest technologies and industry trends, incorporating new tools and techniques to enhance the platform's capabilities and deliver innovative solutions.
+- Built front-end and backend for the platform using KnockoutJS and NodeJS, storing and querying a **Neo4j knowledge graph**.
+- Designed scalable RESTful APIs and optimized graph queries for efficient relationship traversal and real-time search.
+- Managed the full software lifecycle — planning, development, testing, deployment, and maintenance — in a client-facing environment.
 
 ---
 
@@ -51,12 +80,10 @@ As a Full Stack Developer at Kaz Software, I contributed to the development of a
 **Nascenia IT Limited | Dhaka, Bangladesh**  
 *Jun 2012 - Sep 2013*
 
-As a Software Engineer at Nascenia IT Ltd., I played a key role in designing and deploying web-based products using Ruby on Rails and Javascript. Leading a team, I spearheaded the development of innovative solutions and ensured the successful implementation of projects.
+Designed and deployed web-based products using Ruby on Rails, Django, and JavaScript, leading development from architecture to production.
 
 **Key Responsibilities:**
-- Led a team of developers in designing and deploying web-based products, utilizing Ruby on Rails and Javascript technologies. This involved overseeing the entire development process, from conceptualization to delivery, ensuring high-quality and efficient solutions.
-- Developed APIs for managing internet-connected home appliances, contributing to the advancement of IoT (Internet of Things) technology and enabling seamless control and automation of devices.
-- Actively participated in project planning and requirement analysis, collaborating closely with stakeholders to understand project objectives and translate them into technical specifications. This involved identifying and addressing potential challenges and providing valuable insights to optimize the development process.
-- Maintained databases for development, staging, and production environments, ensuring data integrity, performance optimization, and efficient workflows throughout the software development lifecycle.
-- Conducted regular code reviews, ensuring adherence to coding best practices, maintainability, and scalability of web applications.
-- Collaborated with cross-functional teams, including designers, product managers, and quality assurance engineers, to deliver solutions that met client requirements and provided exceptional user experiences.
+- Led a team building full-stack web products from conceptualization to delivery.
+- Designed RESTful APIs for internet-connected home-appliance (IoT) controller systems, enabling secure device communication and remote management.
+- Participated in project planning, system architecture, and database design; maintained development, staging, and production environments for high reliability and data integrity.
+- Conducted code reviews ensuring maintainability and scalability of web applications.

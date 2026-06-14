@@ -2,28 +2,37 @@
 layout: post
 title:  "LLM Demo"
 date:   2024-03-13
-description: Welcome to the demo page! Here, you'll discover two intriguing projects  Brissy and TabgpT. Brissy allows you to engage in friendly conversations using Australian slang, while TabgpT enables you to interact with any tab in Google Chrome. Enjoy exploring the demos!
+description: A look at Writed, a private AI journal that runs entirely in your browser. Write in markdown and chat with your own entries, with all AI processing happening on-device. Nothing ever leaves your tab.
 ---
 <!-- <br/> -->
 
-Brissy: The Australian Slang Chatbot
+Writed: A Private AI Journal That Runs in Your Browser
 ========
 
-Ever wanted to chat like a true Aussie? Now you can with **Brissy**, the Australian slang chatbot. Powered by `ChatGPT`, Brissy provides answers on everything from Australian culture to general queries—all in authentic Aussie slang. Whether you're curious about Aussie traditions or simply want to experience a casual, fun conversation in local lingo, Brissy has you covered.
+**Writed** is a markdown journal with a built-in AI assistant that runs *entirely on your device*. You write your entries, then ask the AI questions about your own thoughts—and none of it ever leaves your browser tab. No account, no cloud upload, no tracking.
 
-This project demonstrates the versatility of `ChatGPT` in creating engaging, user-friendly chatbots. Developed with `LangChain`, Brissy uses the ChatGPT API to deliver responses in Australian slang. It's an open-source project, and the code is available on [GitHub](https://github.com/qmaruf/Australian-Slang-Chatbot). The chatbot is hosted on **Hugging Face Spaces**, making it accessible to anyone interested in Australian slang.
+Most "AI journal" apps ship your most private writing off to a server for embedding and inference. Writed flips that: the embeddings and the chat model both run locally, so your journal stays yours.
 
-> Give it a try [Brissy](https://qmaruf-australianslangchatbot.hf.space/).
+How It Works
+--------
 
-<br><br><br>
+You write entries in a clean markdown editor, organized by date, and they auto-save locally as you type. Behind the scenes, Writed indexes those entries on-device so they become searchable.
 
-TabgpT: A Chrome Extension to Interact with Your Tabs
-========
+When you ask a question, it runs a **hybrid retrieval** over your own entries and answers with **citations**—pointing you back to the exact entries and dates the answer came from. All of that retrieval and generation happens inside the browser tab using **WebGPU** and **WebAssembly**, with local embedding and chat models.
 
-**TabgpT** is a Chrome extension that lets you interact with your open browser tabs through natural language queries. Powered by `ChatGPT`, TabgpT can answer questions based on the content of your tabs, making it easier than ever to find the information you need without navigating between pages.
+What Makes It Different
+--------
 
-Built using `LangChain`, TabgpT uses the ChatGPT API to extract information from open tabs. The extension leverages AWS Lambda and ECR in the backend, along with the **Retrieval Augmented Generation (RAG)** model to answer questions. TabgpT stores data in a **Chrome vectorstore database** using OpenAI embeddings. When you ask a question, relevant content chunks are retrieved with **Maximum Marginal Relevance (MMR)** search and passed to OpenAI’s API to generate an accurate response.
+- **On-device AI** — local embeddings and chat; your writing never leaves the browser.
+- **Markdown, date-based entries** — simple, fast, and yours.
+- **Retrieval with citations** — answers grounded in your real entries, with sources and dates.
+- **Offline-first** — works without a connection after the initial load.
+- **Own your data** — export the whole journal as a ZIP of plain markdown files anytime.
+- **No account required** — open it and start writing.
+- **Open source** — released under the MIT license.
 
-The user interface is designed with **Twitter Bootstrap** and **jQuery** for a seamless experience. Available on the Chrome Web Store, TabgpT is your go-to tool for browsing more efficiently.
+It's free and permanently so for a single device—unlimited entries, on-device AI, and full export. A planned **Pro** tier ($5/month) adds end-to-end encrypted cloud sync, multi-device access, and automatic backups, without giving up the privacy model.
 
-> Give it a try [TabgpT](https://chromewebstore.google.com/detail/tabgpt/meccgaejdpffgldieiacfnbjikenjcfj?authuser=0&hl=en).
+Writed is a practical demonstration of how far in-browser AI has come: real retrieval-augmented chat over personal data, with zero server round-trips.
+
+> Try it out [Writed](https://www.writed.app/).

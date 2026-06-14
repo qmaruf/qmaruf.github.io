@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Research
+description: "PhD research of Quazi Marufur Rahman on deep learning vision systems, run-time performance monitoring, and failure detection for object detection and semantic segmentation — foundations for trustworthy AI and computer vision."
+keywords: "deep learning research, computer vision, performance monitoring, failure detection, object detection, semantic segmentation, robotic vision, machine learning, Quazi Marufur Rahman publications"
 ---
 
 <br>
