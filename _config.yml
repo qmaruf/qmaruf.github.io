@@ -1,8 +1,8 @@
 # Setup
 title:               Quazi Marufur Rahman
-tagline:             'LLMs · AI Agents · Agentic AI · LLM Fine-Tuning · Computer Vision · AWS'
-description:         'Quazi Marufur Rahman — PhD AI engineer and consultant specializing in large language models (LLMs), AI agents, agentic AI, LLM fine-tuning and model training, RAG pipelines, and production computer vision. 10+ years shipping production-grade machine learning systems.'
-keywords:            'LLM, large language models, AI agents, agentic AI, LLM fine-tuning, LLM model training, RAG, retrieval augmented generation, computer vision, machine learning, deep learning, MLOps, AI consultant, vector database, model deployment, AWS SageMaker, PyTorch, Quazi Marufur Rahman'
+tagline:             'Production LLM & Agentic AI Systems'
+description:         'Quazi Marufur Rahman — AI consultant who ships production LLM and agentic AI systems. PhD in robotic vision, 10+ years building machine learning that holds up outside the notebook.'
+keywords:            'LLM consultant, agentic AI, AI agents, RAG, LLM fine-tuning, production machine learning, computer vision, MLOps, AI consultant, Quazi Marufur Rahman'
 lang:                en
 url:                 https://qmaruf.me
 baseurl:             ''
@@ -28,7 +28,7 @@ social:
 author:
   name:              Quazi Marufur Rahman
   url:               https://www.linkedin.com/in/qmaruf/
-  email:             maruf.csdu@gmail.com
+  email:             hi@qmaruf.me
   github:            qmaruf
   linkedin:          https://linkedin.com/in/qmaruf/
   twitter:           qmaruf

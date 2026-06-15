@@ -7,6 +7,7 @@ keywords: "LLM, AI agents, agentic AI, LLM fine-tuning, RAG, computer vision, Py
 
 <div class="posts">
   {% for post in paginator.posts %}
+  {% unless post.hidden %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url | absolute_url }}">
@@ -18,6 +19,7 @@ keywords: "LLM, AI agents, agentic AI, LLM fine-tuning, RAG, computer vision, Py
 
     {{ post.content }}
   </div>
+  {% endunless %}
   {% endfor %}
 </div>
 

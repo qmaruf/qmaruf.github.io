@@ -2,6 +2,7 @@
 layout: post
 title:  "LLM Demo"
 date:   2024-03-13
+hidden: true
 description: A look at Writed, a private AI journal that runs entirely in your browser. Write in markdown and chat with your own entries, with all AI processing happening on-device. Nothing ever leaves your tab.
 ---
 <!-- <br/> -->

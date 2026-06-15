@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Industry
-description: "Industry experience of Quazi Marufur Rahman — building LLMs, AI agents, agentic AI, RAG pipelines, LLM fine-tuning, and production computer vision systems across 10+ years at Transoft Solutions, AMAG, Toptal and more."
-keywords: "LLM engineer, AI agent developer, agentic AI, RAG, LLM fine-tuning, computer vision engineer, MLOps, AWS SageMaker, machine learning experience, Quazi Marufur Rahman"
+title: Work
+description: "10+ years of Quazi Marufur Rahman's production machine learning work — LLM and agentic AI systems, RAG, and computer vision across Transoft Solutions, AMAG, Toptal and more."
+keywords: "LLM engineer, agentic AI, RAG, computer vision, MLOps, machine learning experience, Quazi Marufur Rahman"
 ---
 
 ## Technical Specialist — Computer Vision & AI
